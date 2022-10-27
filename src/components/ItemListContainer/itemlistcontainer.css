@@ -1,0 +1,8 @@
+.item-list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px;
+    border-style: solid;
+    margin-top: 200px;
+}
