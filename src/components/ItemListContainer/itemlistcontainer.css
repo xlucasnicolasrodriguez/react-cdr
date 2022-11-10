@@ -6,3 +6,10 @@
     border-style: solid;
     margin-top: 200px;
 }
+
+.containerItemList{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url(../../assets/fondo-peliserie.jpg);
+}

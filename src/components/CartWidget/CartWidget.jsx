@@ -1,10 +1,8 @@
 
-const CartWidget = () => {
-    return (
-        <>
-            <h1><i className="bi bi-cart4" /></h1>
-        </>
+import React from 'react';
+
+export const CartWidget = () => {
+    return(
+        <i className="bi bi-cart4"></i>
     );
 }
-
-export default CartWidget;

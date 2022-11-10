@@ -1,0 +1,20 @@
+
+.film{
+    display: block;
+    width: 30%;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(125, 125, 126, 0.199);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.film img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
