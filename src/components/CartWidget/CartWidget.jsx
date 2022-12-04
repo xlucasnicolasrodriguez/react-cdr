@@ -6,10 +6,10 @@ const CartWidget = () => {
     const {getItemQuantity} = useContext(CartContext)
     return (
         <>
-            <ul className='navbar-nav me-auto cartWidget'>
+            <ul className='navbar-nav '>
                 <li className="nav-item">
                     <Link className="nav-link" to="/cart">
-                        <button className="btn btn-secondary">
+                        <button className="btn btn-dark">
                             <i className="fas fa-shopping-cart fa-lg"></i>
                             { getItemQuantity() >= 1 && <span className="cantCarrito">{getItemQuantity()}</span>}
                             </button>

@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
 const Item = ({prod}) => {
     return (
-        <div className="card border-light mb-3 cardProducto">
-                        <img src={prod.image} className="card-img-top" alt="" />
-                        <div className="card-body">
+        <div className="producto">
+                        
+                        <div className="hovercard">
+                            <div></div>
+                            <div className="card">
+                            <img src={prod.image} className="card-img-top" alt="" />
                             <h5 className="card-title">{prod.title}</h5>
-                            <p className="card-text">*{prod.abstract}*</p>
-                            <p className="card-text"> US$ {new Intl.NumberFormat('de-DE').format(prod.price)}</p>
-                            <button className='btn btn-dark'><Link className='nav-link' to={`/product/${prod.id}`}><i className="far fa-eye"></i></Link></button>
+                            <p className="card-text d-flex justify-content-center"> US$ {new Intl.NumberFormat('de-DE').format(prod.price)}</p>
+                            <p className="card-text d-flex justify-content-center">
+                            <button className='btn btn-dark '><Link className='nav-link ' to={`/product/${prod.id}`}><i className=""></i>Buy Now</Link></button></p>
+                    </div>
                     </div>
         </div>
     );

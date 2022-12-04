@@ -16,10 +16,10 @@ const Cart = () => {
             <div className=" container cartContainer">
                 {cart.map((prod,indice) =><div className="card mb-3" key={indice} style={{maxWidth: '540px'}}>
                 <div className="row g-0">
-                    <div className="col-md-4">
+                    <div className="col-md-4 ">
                     <img src={prod.image} className="img-fluid rounded-start" alt="..." />
                 </div>
-                    <div className="col-md-8">
+                    <div className="col-md-8 ">
                         <div className="card-body">
                             <h5 className="card-title">{prod.title}</h5>
                             <p className="card-text">Cantidad: {prod.cant}</p>
@@ -34,9 +34,9 @@ const Cart = () => {
             )}
             <div>
                 <p>Total: $ {new Intl.NumberFormat('de-DE').format(totalPrice())}</p>
-                <button className="btn btn-danger buttonCarts" onClick={emptyCart}>Limpiar Carrito</button>
+                <button className="btn btn-dark buttonCarts" onClick={emptyCart}>Limpiar Carrito</button>
                 <Link to="/checkout">
-                    <button className="btn btn-primary buttonCarts">Finalizar Compra</button>
+                    <button className="btn btn-dark buttonCarts">Finalizar Compra</button>
                 </Link>
             </div>
             </div>
