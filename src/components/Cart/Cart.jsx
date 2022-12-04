@@ -1,15 +1,12 @@
 import { useContext } from "react";
+import { CartContext } from "../../context/CartContext"; 
 import { Link } from "react-router-dom";
-
-// context
-import { DarkModeContext } from '../../context/darkMode.js';
-import { CartContext } from "../../context/CartContext.js";
 const Cart = () => {
-    const {darkMode} = useContext(DarkModeContext)
+    const {cart, emptyCart, totalPrice, removeItem} = useContext(CartContext)
 
-    const {cart, emptyCart, removeItem, totalPrice} = useContext(CartContext)
     return (
-        <div className={darkMode ? "item_container darkMode" : "item_container"}>
+        <>
+
             {cart.length === 0 ? 
             <div>
                 <p>Tu carrito esta vacio</p>
@@ -44,7 +41,7 @@ const Cart = () => {
             </div>
             </div>
             }
-        </div>
+        </>
         
     );
 }

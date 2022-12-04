@@ -16,7 +16,6 @@ const App = () => {
   
   return (
     <>
-      <DarkModeProvider>
       <BrowserRouter>
         <CartContextProvider>
           <Navbar/>
@@ -30,9 +29,7 @@ const App = () => {
           </Routes>
           <ToastContainer/>
         </CartContextProvider>   
-      </BrowserRouter>     
-      
-      </DarkModeProvider>
+      </BrowserRouter>
     </>
   );
 }

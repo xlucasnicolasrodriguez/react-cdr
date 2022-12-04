@@ -62,7 +62,7 @@ const Checkout = () => {
                     <label htmlFor="direccion" className="form-label">Dirección</label>
                     <input type="text" className="form-control" name="direccion" />
                 </div>
-                   
+                
                         <button type="submit" className="btn btn-primary">Finalizar Compra</button>
                     
                     

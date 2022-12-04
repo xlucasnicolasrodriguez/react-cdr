@@ -20,7 +20,7 @@
     },
     {
         "id": 3,
-        "image":"https://firebasestorage.googleapis.com/v0/b/magrit-react-ii.appspot.com/o/blue-cinema-1925(1).jpg!Large.jpg?alt=media&token=14749796-f654-4556-bf94-d52eef98950c",
+        "image":"https://firebasestorage.googleapis.com/v0/b/magrit-react-ii.appspot.com/o/self-portrait-1923(1).jpg!Large.jpg?alt=media&token=7ad1b47b-38fd-43dc-b686-2d4b87234015",
         "categ": 1,
         "title":"Self Portrait 1923",
         "price": 899,
@@ -161,5 +161,86 @@
         "price": 899,
         "stock": 30,
         "abstract":"Original Title: La résponse imprévue. Date: 1933; Brussels, Belgium. Style: Surrealism. Period: Brussels pre-war and war years. Genre: symbolic painting. Media: oil, canvas. Location: Magritte Museum, Brussels, Belgium. - information available after pursache"
+    },
+    {
+        "id": 19,
+        "image":"https://firebasestorage.googleapis.com/v0/b/magrit-react-ii.appspot.com/o/the-liberator-1947(1).jpg!Large.jpg?alt=media&token=ed2fa734-eba1-4dcd-963e-f53b47b8290b",
+        "categ": 3,
+        "title":"The Liberator 1947",
+        "price": 999,
+        "stock": 20,
+        "abstract":"Original Title: Le Liberateur. Date: 1947; Brussels, Belgium. Style: Surrealism. Period: Vache Period. Genre: symbolic painting. Media: oil, canvas. Location: Private Collection. Dimensions: 99.1 x 78.7 cm"
+    },
+    {
+        "id": 20,
+        "image":"https://firebasestorage.googleapis.com/v0/b/magrit-react-ii.appspot.com/o/prince-charming-1948(1).jpg!Large.jpg?alt=media&token=eda30847-8731-4799-ba35-0985da57900b",
+        "categ": 3,
+        "title":"Prince Charming 1948",
+        "price": 499,
+        "stock": 15,
+        "abstract":"Date: 1948; Brussels, Belgium. Style: Surrealism. Period: Vache Period. Genre: symbolic painting. Location: Private Collection. - information available after pursache"
+    },
+    {
+        "id": 21,
+        "image":"https://firebasestorage.googleapis.com/v0/b/magrit-react-ii.appspot.com/o/the-treachery-of-images-this-is-not-a-pipe-1948(2).jpg!Large.jpg?alt=media&token=0a45f485-52fc-4ab9-8f6c-44983b8a780a",
+        "categ": 3,
+        "title":"The Treachery Of Images (This Is Not A Pipe) 1948",
+        "price": 1399,
+        "stock": 10,
+        "abstract":"Original Title: La Trahison des images (Ceci n'est pas une pipe). Date: 1928 - 1929; Brussels, Belgium. Style: Surrealism. Period: Vache Period. Genre: symbolic painting. Media: oil, canvas. Location: Los Angeles County Museum of Art (LACMA), Los Angeles, CA, US. Dimensions: 63.5 x 93.98 cm."
+    },
+    {
+        "id": 22,
+        "image":"https://firebasestorage.googleapis.com/v0/b/magrit-react-ii.appspot.com/o/memory-1948-1(1).jpg!Large.jpg?alt=media&token=eb7dcf7e-373b-4f4b-8a7a-086f3006989b",
+        "categ": 3,
+        "title":"Memory 1948",
+        "price": 299,
+        "stock": 50,
+        "abstract":"Date: 1948; Brussels, Belgium. Style: Surrealism. Period: Mature Period. Genre: allegorical painting. Media: oil, canvas. Dimensions: 59 x 49 cm - information available after pursache"
+    },
+    {
+        "id": 23,
+        "image":"https://firebasestorage.googleapis.com/v0/b/magrit-react-ii.appspot.com/o/natural-encounters-1945(1).jpg!Large.jpg?alt=media&token=1ac8cab2-5ab1-44c1-b8b4-59c78c94b4f8",
+        "categ": 3,
+        "title":"Natural Encounters 1945",
+        "price": 599,
+        "stock": 70,
+        "abstract":"Date: 1945; Brussels, Belgium. Style: Surrealism. Period: Sunlit Period. Genre: symbolic painting. Media: oil, canvas. Location: Royal Museums of Fine Arts of Belgium, Brussels, Belgium. Dimensions: 80 x 65 cm"
+    },
+    {
+        "id": 24,
+        "image":"https://firebasestorage.googleapis.com/v0/b/magrit-react-ii.appspot.com/o/the-drop-of-water-1948(1).jpg!Large.jpg?alt=media&token=e7b188c6-bc88-4516-b45a-3152198675e3",
+        "categ": 3,
+        "title":"The Drop Of Water 1948",
+        "price": 699,
+        "stock": 40,
+        "abstract":"Date: 1948; Brussels, Belgium. Style: Surrealism. Period: Vache Period. Genre: symbolic painting. Location: Private Collection. - information available after pursache"
+    },
+    {
+        "id": 25,
+        "image":"https://firebasestorage.googleapis.com/v0/b/magrit-react-ii.appspot.com/o/delusions-of-grandeur-1948(1).jpg!Large.jpg?alt=media&token=86a85040-71dc-4297-8a7d-651efaa02e45",
+        "categ": 3,
+        "title":"Delusion Of Grandeur 1948",
+        "price": 499,
+        "stock": 50,
+        "abstract":"Date: 1948; Brussels, Belgium. Style: Surrealism. Period: Mature Period. Genre: symbolic painting. Dimensions: 99 x 81.5 cm. - information available after pursache"
+    },
+    {
+        "id": 26,
+        "image":"https://firebasestorage.googleapis.com/v0/b/magrit-react-ii.appspot.com/o/deep-waters-1941(1).jpg!Large.jpg?alt=media&token=8c64d1fe-74b0-4c01-a463-f8cc7088b41f",
+        "categ": 3,
+        "title":"Deep Waters 1941",
+        "price": 199,
+        "stock": 60,
+        "abstract":"Original Title: Les eaux profondes. Date: 1941; Carcasonne / Carcassonne, France. Style: Surrealism. Period: Brussels pre-war and war years. Genre: symbolic painting. Media: oil, canvas. Dimensions: 65 x 50 cm. - information available after pursache"
+    },
+    {
+        "id": 27,
+        "image":"https://firebasestorage.googleapis.com/v0/b/magrit-react-ii.appspot.com/o/elementary-cosmogony-1949(1).jpg!Large.jpg?alt=media&token=e6331885-fbc0-4d7a-b2ed-c9dffd64950d",
+        "categ": 3,
+        "title":"Elementary Cosmogony 1949",
+        "price": 299,
+        "stock": 30,
+        "abstract":"Date: 1949; Brussels, Belgium. Style: Surrealism. Period: Mature Period. Genre: symbolic painting. Media: oil, canvas. - information available after pursache"
     }
 ]

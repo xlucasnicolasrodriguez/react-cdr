@@ -19,6 +19,12 @@ const Secciones = () => {
                         Magritte 1 9 3 0
                     </Link>
                 </li>
+                <li className="nav-item">
+                    <Link className='nav-link' to="/category/3">
+                        <button className='btn btn-dark'><i></i></button>
+                        Magritte 1 9 4 0
+                    </Link>
+                </li>
             </ul>
 
     );
