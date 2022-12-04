@@ -27,7 +27,7 @@ const Checkout = () => {
             emptyCart()
             e.target.reset()
             navigate("/")
-          
+        
         }).catch(error => {
             toast.error(`Su orden no fue creada con éxito`)
             console.error(error)
@@ -55,7 +55,7 @@ const Checkout = () => {
                     <input type="number" className="form-control" name="dni" />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="celular" className="form-label">Numero telefonico</label>
+                    <label htmlFor="celular" className="form-label">Telefono</label>
                     <input type="number" className="form-control" name="celular" />
                 </div>
                 <div className="mb-3">

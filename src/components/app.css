@@ -76,9 +76,11 @@ body{
     opacity: 1;
 }
 
-.card {
+.card, .btn-dark {
     background-color: #010202;
     opacity: 0.9;
+    border: none;
+    
 }
 .card:hover {
     background-color: #1a1b1b6e;
@@ -99,4 +101,49 @@ body{
 .card .card-body .card-title {
     color: #dddddd;
     font-weight: 700;
+}
+
+.logo{
+    width: 20vh;
+    border-radius: 10px;
+}
+
+.categoria{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.nav-link{
+    color: aliceblue;
+}
+
+.carrito{
+    font-size: 50px;
+
+}
+
+.footer{
+    background-color: #000;
+    color:white;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.carrito-vacio{
+    height: 500px;
+}
+
+.carrito-vacio-size{
+    font-size: 50px;
+    text-align: center;
+}
+
+.total-prods{
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
 }

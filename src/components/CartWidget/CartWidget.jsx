@@ -9,8 +9,8 @@ const CartWidget = () => {
             <ul className='navbar-nav '>
                 <li className="nav-item">
                     <Link className="nav-link" to="/cart">
-                        <button className="btn btn-dark">
-                            <i className="fas fa-shopping-cart fa-lg"></i>
+                        <button className="btn ">
+                            <i className="fas fa-shopping-cart carrito"></i>
                             { getItemQuantity() >= 1 && <span className="cantCarrito">{getItemQuantity()}</span>}
                             </button>
                     </Link>

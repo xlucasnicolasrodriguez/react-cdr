@@ -12,6 +12,7 @@ import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
 import Cart from './Cart/Cart';
 import ItemListContainer from './ItemListContainer/ItemListContainer';
 import Checkout from './Checkout/Checkout'
+import Footer from "./Footer/Footer";
 const App = () => {
   
   return (
@@ -28,6 +29,7 @@ const App = () => {
             <Route path='*' element = {<h1>Ruta no encontrado</h1>} />
           </Routes>
           <ToastContainer/>
+          <Footer/>
         </CartContextProvider>   
       </BrowserRouter>
     </>

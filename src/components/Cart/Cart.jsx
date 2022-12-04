@@ -8,8 +8,8 @@ const Cart = () => {
         <>
 
             {cart.length === 0 ? 
-            <div>
-                <p>Tu carrito esta vacio</p>
+            <div className="carrito-vacio">
+                <p className="carrito-vacio-size">NO HAY PRODUCTOS EN TU CARRITO</p>
                 <Link to={'/'}><button className="btn btn-dark">Ir al inicio</button></Link>
             </div> 
             : 
@@ -23,9 +23,9 @@ const Cart = () => {
                         <div className="card-body">
                             <h5 className="card-title">{prod.title}</h5>
                             <p className="card-text">Cantidad: {prod.cant}</p>
-                            <p className="card-text">Precio unitario: $ {new Intl.NumberFormat('de-DE').format(prod.price)}</p>
-                            <p className="card-text">Subtotal: $ {new Intl.NumberFormat('de-DE').format(prod.price * prod.cant)}</p>
-                            <button className="btn btn-danger" onClick={() => removeItem(prod.id)}><i className="fas fa-trash-alt"></i></button>
+                            <p className="card-text">Precio por unidad: $ {new Intl.NumberFormat('de-DE').format(prod.price)}</p>
+                            <p className="card-text">Total: $ {new Intl.NumberFormat('de-DE').format(prod.price * prod.cant)}</p>
+                            <button className="btn btn-dark" onClick={() => removeItem(prod.id)}><i className="fas fa-trash-alt"></i></button>
                         </div>
                         
                     </div>
@@ -33,7 +33,7 @@ const Cart = () => {
             </div>
             )}
             <div>
-                <p>Total: $ {new Intl.NumberFormat('de-DE').format(totalPrice())}</p>
+                <p className="total-prods">Total: $ {new Intl.NumberFormat('de-DE').format(totalPrice())}</p>
                 <button className="btn btn-dark buttonCarts" onClick={emptyCart}>Limpiar Carrito</button>
                 <Link to="/checkout">
                     <button className="btn btn-dark buttonCarts">Finalizar Compra</button>
