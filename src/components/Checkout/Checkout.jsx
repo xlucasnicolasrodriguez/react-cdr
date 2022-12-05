@@ -46,7 +46,7 @@ const Checkout = () => {
         }else{
             toast.error(`Los emails no coinciden`)
         }
-    }
+    } 
 
     return (
         <div className="container-form">
@@ -64,7 +64,7 @@ const Checkout = () => {
                     <input type="email" className="form-control" name="email" required />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="emailRepeat" className="form-label">Repite el mail</label>
+                    <label htmlFor="emailRepeat" className="form-label">Repite el Email</label>
                     <input type="email" className="form-control" name="emailRepeat" required/>
                 </div>
                 <div className="mb-3">
@@ -83,7 +83,6 @@ const Checkout = () => {
                         <br />
                         <br />
             </form>
-
         </div>
     );
 }

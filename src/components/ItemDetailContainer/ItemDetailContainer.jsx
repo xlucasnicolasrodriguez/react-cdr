@@ -1,7 +1,8 @@
-import {useState, useEffect, useContext} from 'react';
+import {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom'
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { getProducto } from '../../assets/firebase.js'
+
 const ItemDetailContainer = () => {
 
     const [producto, setProducto] = useState([]);
@@ -10,7 +11,7 @@ const ItemDetailContainer = () => {
         getProducto(id).then(prod => {
             setProducto(prod)
         })
-    }, []);
+    }, );
 
     return (
         

@@ -7,9 +7,10 @@ import Navbar from './Navbar/Navbar';
 import ItemDetailContainer from './ItemDetailContainer/ItemDetailContainer';
 import Cart from './Cart/Cart';
 import ItemListContainer from './ItemListContainer/ItemListContainer';
-import Checkout from './Checkout/Checkout'
-import Footer from "./Footer/Footer";
-import Error from "./Error/Error";
+import Checkout from './Checkout/Checkout';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
+import Error from './Error/Error';
 
 const App = () => {
   
@@ -18,6 +19,7 @@ const App = () => {
       <BrowserRouter>
         <CartContextProvider>
           <Navbar/>
+          <Header/>
           <Routes>
             <Route path='/' element={<ItemListContainer/>}/>
             <Route path='/product/:id' element={<ItemDetailContainer/>}/>

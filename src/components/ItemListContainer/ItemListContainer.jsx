@@ -28,9 +28,9 @@
         
         return (
             <div className= 'row cardProductos' >
+                <h2 className='obras-title' >OBRAS {category}</h2>
                 {productos}
             </div>
-        
         );
     }
     

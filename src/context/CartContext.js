@@ -54,7 +54,7 @@ const CartContextProvider = (props) => {
     }
     console.log(cart)
     return (
-        <CartContext.Provider value = {{cart, isInCart, addItem, emptyCart, removeItem,getItemQuantity, totalPrice}}>
+        <CartContext.Provider value = {{cart, isInCart, addItem, emptyCart, removeItem, getItemQuantity, totalPrice}}>
             {props.children}
         </CartContext.Provider>
     )
