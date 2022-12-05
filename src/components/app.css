@@ -90,7 +90,7 @@ body{
     text-align: center;
 }
 
-.botItem {
+.contador-icon {
     margin: 10px;
 }
 
@@ -113,6 +113,9 @@ body{
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
 }
 
 .cantCarrito {
@@ -122,7 +125,8 @@ body{
 
 .cartContainer {
     margin-top:10px;
-    margin-left: 400px;
+    text-align: center;
+    padding-left: 300px;
 }
 
 .buttonCarts {
@@ -145,6 +149,11 @@ body{
 .container-form{
     display: flex;
     justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+.title-form{
+    color: #000;
 }
 
 .header-main{
@@ -160,9 +169,44 @@ body{
     border-radius: 25px;
 }
 
+.img-detail{
+    border-radius: 10px;
+
+}
+.container-detail-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-detail{
+    margin-top: 50px;
+    text-align: center;
+}
+
 .obras-title{
     text-align: center;
     border: 6px;
     border-style: double;
     border-color: rgb(24, 18, 18);
+}
+
+.cart-image{
+    width: 100%;
+    height: 100%;
+}
+
+hr{
+    color: white;
+}
+
+.title-detail{
+    font-size: 30px;
+}
+
+.container-total{
+    text-align: center;
+    padding-right: 250px;
+    padding-top: 40px;
+    padding-bottom: 100px;
 }

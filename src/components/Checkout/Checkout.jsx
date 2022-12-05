@@ -51,6 +51,7 @@ const Checkout = () => {
     return (
         <div className="container-form">
             <form onSubmit={consultarFormulario} ref={datosFormulario}>
+            <h3 className="title-form">FORMULARIO DE COMPRA</h3>
                 <div className="mb-3">
                     <label htmlFor="nombre" className="form-label">Nombre</label>
                     <input type="text" className="form-control" name="nombre" required />
