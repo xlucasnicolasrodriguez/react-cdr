@@ -1,6 +1,6 @@
 
     import {useState, useEffect} from 'react';
-    import ItemList from '../itemList/itemList.jsx';
+    import ItemList from '../ItemList/ItemList.jsx';
     import {getProductos} from '../../assets/firebase.js'
     import { useParams } from 'react-router-dom';
     
