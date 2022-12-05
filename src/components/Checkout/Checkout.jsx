@@ -40,7 +40,7 @@ const Checkout = () => {
                 navigate("/")
             
             }).catch(error => {
-                toast.error(`Su orden no fue creada con éxito`)
+                toast.error(`Error en la compra`)
             })
             
         }else{
