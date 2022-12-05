@@ -1,4 +1,5 @@
-import { useState, createContext} from 'react'
+import { useState, createContext} from 'react';
+import { toast } from "react-toastify";
 
 const CartContext = createContext([])
 
@@ -31,6 +32,16 @@ const CartContextProvider = (props) => {
     }
    
     const removeItem = (id) => {
+        toast.warning(`PRODUCTO ELIMINADO`, {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
         return setCart(cart.filter(prod => prod.id !== id))
     }
 

@@ -1,48 +1,21 @@
-/* import './ItemCount.css';
-import React, { useState, useEffect } from 'react';
-
-export const ItemCount = ({initial, stock, onAdd}) => {
-    const [count, setCount] = useState(parseInt(initial));
-    
-    const decrease = () => {
-        setCount(count - 1);
-    }
-
-    const increase = () => {
-        setCount(count + 1);
-    }
-
-    useEffect(() => {
-        setCount(parseInt(initial));
-    }, [initial]);
-
-    return(
-        <div className="counter">
-            <button disabled={count <= 1} onClick={decrease}>
-                -
-            </button>
-            <span>
-                {count}
-            </span>
-            <button disabled={count >= stock} onClick={increase}>
-                +
-            </button>
-            <div>
-                <button disabled={stock <= 0} onClick={() => onAdd(count)}>
-                    Agregar al carrito
-                </button>
-            </div>
-        </div>
-    );
-} */
-
 import {useState} from 'react';
+import { toast } from "react-toastify";
 
 const ItemCount = ({stock, onAdd}) => {
-    const [contador, setContador] = useState(1) //valor inicial
+    const [contador, setContador] = useState(1)
 
     const agregarAlCarrito = () => {
         onAdd(contador)
+        toast.success(`PRODUCTO AGREGADO`, {
+            position: "bottom-right",
+            autoClose: 5000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
     }
 
     const incrementar = () => contador < stock && setContador(contador + 1)

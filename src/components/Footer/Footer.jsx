@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+
 const Footer = () => {
     return (
         <div className='footer'>
-            <p>Black Market Magritte desarrollado por Lucas N. Rodriguez</p>
-
+            <p>Black Market Magritte - Written and Directed by LUCAS PROJECTS</p>
         </div>
     );
 }

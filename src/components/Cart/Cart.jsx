@@ -6,7 +6,6 @@ const Cart = () => {
 
     return (
         <>
-
             {cart.length === 0 ? 
             <div className="carrito-vacio">
                 <p className="carrito-vacio-size">NO HAY PRODUCTOS EN TU CARRITO</p>
@@ -25,7 +24,7 @@ const Cart = () => {
                             <p className="card-text">Cantidad: {prod.cant}</p>
                             <p className="card-text">Precio por unidad: $ {new Intl.NumberFormat('de-DE').format(prod.price)}</p>
                             <p className="card-text">Total: $ {new Intl.NumberFormat('de-DE').format(prod.price * prod.cant)}</p>
-                            <button className="btn btn-dark" onClick={() => removeItem(prod.id)}><i className="fas fa-trash-alt"></i></button>
+                            <button className="btn btn-dark" onClick={() => removeItem(prod.id)}><i className="fas fa-trash-alt"></i> Eliminar Producto</button>
                         </div>
                         
                     </div>
