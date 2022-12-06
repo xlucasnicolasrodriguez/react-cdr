@@ -1,8 +1,9 @@
 
-import React, {useContext} from "react"
+import React from "react";
+import {useContext} from "react";
 import { useNavigate} from "react-router-dom";
-import { createOrdenCompra, getProducto, updateProducto } from "../../assets/firebase"
-import { CartContext } from "../../context/CartContext"
+import { createOrdenCompra, getProducto, updateProducto } from "../../assets/firebase";
+import { CartContext } from "../../context/CartContext";
 import { toast } from 'react-toastify';
 
 const Checkout = () => {
@@ -17,15 +18,14 @@ const Checkout = () => {
         if(valores.email === valores.emailRepeat){
             const aux = [...cart]
             aux.forEach(producto => {
-                getProducto(producto.id)
-                .then(prod => {
+                getProducto(producto.id).then(prod => {
                     prod.stock -= producto.cant
                     updateProducto(producto.id, prod)
                 })
             })
             
             createOrdenCompra(valores, totalPrice(), new Date().toISOString().slice(0, 10)).then(orden => {
-                toast.success(`Su compra ${orden.id} se realizo exitosamente!`, {
+                toast.success(`Su compra ${orden.id} se realizo exitosamente! `, {
                     position: "bottom-right",
                     autoClose: 5000,
                     hideProgressBar: true,
@@ -80,9 +80,15 @@ const Checkout = () => {
                     <label htmlFor="direccion" className="form-label">Dirección de Facturación</label>
                     <input type="text" className="form-control" name="direccion" required />
                 </div>
-                        <button type="submit" className="btn btn-dark">Finalizar Compra</button>
-                        <br />
-                        <br />
+                {
+                cart.length > 0 ?
+                <button type="submit" className="btn btn-dark finalizar-compra" >Finalizar Compra</button>
+                :
+                <div>
+                    <button type="submit" className="btn btn-dark finalizar-compra" disabled >Finalizar Compra</button>
+                    <h1 className="carrito-vacio-size">NO HAY PRODUCTOS EN EL CARRITO</h1>
+                </div>
+                }   
             </form>
         </div>
     );
