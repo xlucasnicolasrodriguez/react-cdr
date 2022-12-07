@@ -10,19 +10,19 @@ const Secciones = () => {
                 </li>
                 <li className="nav-item categoria">
                     <Link className='nav-link' to="/category/1920">
-                        <button className='btn btn-dark'><i> </i></button>
+                        <button className='btn btn-dark'></button>
                         Magritte 1 9 2 0
                     </Link>
                 </li>
                 <li className="nav-item categoria">
                     <Link className='nav-link' to="/category/1930">
-                        <button className='btn btn-dark'><i></i></button>
+                        <button className='btn btn-dark'></button>
                         Magritte 1 9 3 0
                     </Link>
                 </li>
                 <li className="nav-item categoria">
                     <Link className='nav-link' to="/category/1940">
-                        <button className='btn btn-dark'><i></i></button>
+                        <button className='btn btn-dark'></button>
                         Magritte 1 9 4 0
                     </Link>
                 </li>
