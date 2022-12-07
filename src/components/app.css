@@ -130,7 +130,7 @@ body{
 .cartContainer {
     margin-top:10px;
     text-align: center;
-    padding-left: 300px;
+    padding-left: 23%;
 }
 
 .buttonCarts {
@@ -171,6 +171,7 @@ body{
 }
 .img-banner{
     border-radius: 25px;
+    width: 92vw;
 }
 
 .img-detail{
@@ -210,7 +211,7 @@ hr{
 
 .container-total{
     text-align: center;
-    padding-right: 250px;
+    padding-right: 33%;
     padding-top: 40px;
     padding-bottom: 100px;
 }
